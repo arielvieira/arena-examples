@@ -1,0 +1,7 @@
+{
+  "name": "hello-arena",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

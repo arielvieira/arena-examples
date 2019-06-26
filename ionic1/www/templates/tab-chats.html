@@ -1,0 +1,23 @@
+<ion-view view-title="Chats">
+  <ion-content>
+    <ion-list>
+      <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="chat in chats" type="item-text-wrap"
+        href="#/tab/chats/{{chat.id}}">
+        <img ng-src="{{chat.face}}">
+        <h2>{{chat.name}}</h2>
+        <p>{{chat.lastText}}</p>
+        <i class="icon ion-chevron-right icon-accessory"></i>
+
+        <ion-option-button class="button-assertive" ng-click="remove(chat)">
+          Delete
+        </ion-option-button>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+  <ion-content>
+    <h2>Liveblog iframe</h2>
+    <iframe width="100%" height="315"
+      src="http://localhost:3000/embed?publisher=asgard&event=0k3e&token=NDA2YjI0NjQtZTY0ZC00ZGY0LThmNzAtZmJjNTkzNzMzNGJi&v=2"
+      frameborder="0" allowfullscreen></iframe>
+  </ion-content>
+</ion-view>
